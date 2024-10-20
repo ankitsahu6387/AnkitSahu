@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Timetable</title>
+  <link rel="stylesheet" href="table.css">
+</head>
+<body>
+  <h1>Class Timetable</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Hours</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>9:00 AM - 10:00 AM</td>
+        <td class="subject" data-teacher="Mr. X" data-subject="Science" onclick="openDetails('Science', 'Mr. X')">Agile</td>
+        <td class="subject" data-teacher="Ms. Y" data-subject="Maths" onclick="openDetails('Maths', 'Ms. Y')">ML</td>
+        <td class="subject" data-teacher="Mr. Z" data-subject="Science" onclick="openDetails('Science', 'Mr. Z')">DAA</td>
+        <td class="subject" data-teacher="Ms. A" data-subject="Maths" onclick="openDetails('Maths', 'Ms. A')">ML LAB</td>
+        <td class="subject" data-teacher="Mr. B" data-subject="Arts" onclick="openDetails('Arts', 'Mr. B')">PCPH</td>
+      </tr>
+      <tr>
+        <td>10:00 AM - 11:00 AM</td>
+        <td class="subject" data-teacher="Mr. X" data-subject="Science" onclick="openDetails('Science', 'Mr. X')">Verbal</td>
+        <td class="subject" data-teacher="Ms. Y" data-subject="Maths" onclick="openDetails('Maths', 'Ms. Y')">N/A</td>
+        <td class="subject" data-teacher="Mr. Z" data-subject="Science" onclick="openDetails('Science', 'Mr. Z')">ML</td>
+        <td class="subject" data-teacher="Ms. A" data-subject="Maths" onclick="openDetails('Maths', 'Ms. A')">Reasoning</td>
+        <td class="subject" data-teacher="Mr. B" data-subject="Arts" onclick="openDetails('Arts', 'Mr. B')">GD</td>
+      </tr>
+      <tr>
+        <td>11:00 AM - 12:00 AM</td>
+        <td class="subject" data-teacher="Mr. X" data-subject="Science" onclick="openDetails('Science', 'Mr. X')">GD</td>
+        <td class="subject" data-teacher="Ms. Y" data-subject="Maths" onclick="openDetails('Maths', 'Ms. Y')">DAA</td>
+        <td class="subject" data-teacher="Mr. Z" data-subject="Science" onclick="openDetails('Science', 'Mr. Z')">Verbal</td>
+        <td class="subject" data-teacher="Ms. A" data-subject="Maths" onclick="openDetails('Maths', 'Ms. A')">PCPH</td>
+        <td class="subject" data-teacher="Mr. B" data-subject="Arts" onclick="openDetails('Arts', 'Mr. B')">ML</td>
+      </tr>
+      <tr>
+        <td>1:00 AM - 2:00 AM</td>
+        <td class="subject" data-teacher="Mr. X" data-subject="Science" onclick="openDetails('Science', 'Mr. X')">DAA</td>
+        <td class="subject" data-teacher="Ms. Y" data-subject="Maths" onclick="openDetails('Maths', 'Ms. Y')">Agile</td>
+        <td class="subject" data-teacher="Mr. Z" data-subject="Science" onclick="openDetails('Science', 'Mr. Z')">DAA Lab</td>
+        <td class="subject" data-teacher="Ms. A" data-subject="Maths" onclick="openDetails('Maths', 'Ms. A')">N/A</td>
+        <td class="subject" data-teacher="Mr. B" data-subject="Arts" onclick="openDetails('Arts', 'Mr. B')">N/A</td>
+      </tr>
+      <tr>
+        <td>2:00 AM - 3:00 AM</td>
+        <td class="subject" data-teacher="Mr. X" data-subject="Science" onclick="openDetails('Science', 'Mr. X')">N/A</td>
+        <td class="subject" data-teacher="Ms. Y" data-subject="Maths" onclick="openDetails('Maths', 'Ms. Y')">Reasoning</td>
+        <td class="subject" data-teacher="Mr. Z" data-subject="Science" onclick="openDetails('Science', 'Mr. Z')">N/A</td>
+        <td class="subject" data-teacher="Ms. A" data-subject="Maths" onclick="openDetails('Maths', 'Ms. A')">DAA</td>
+        <td class="subject" data-teacher="Mr. B" data-subject="Arts" onclick="openDetails('Arts', 'Mr. B')">N/A</td>
+      </tr>
+    </tbody>
+  </table>
+  <script src="script.js"></script>
+</body>
+</html>
